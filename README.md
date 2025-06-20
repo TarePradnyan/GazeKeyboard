@@ -1,21 +1,36 @@
+
+
 # GazeKeyboard
 
-GazeKeyboard is an eye-tracking based virtual keyboard that allows users to type using only their gaze. It’s designed to improve accessibility for individuals with mobility impairments and also enables hands-free typing in various environments.
+**GazeKeyboard** is a Python program that lets users type using only their eyes. It tracks where you look on the screen using a webcam, waits for a short moment (dwell time), then “presses” that key. This helps people who cannot use their hands and also makes typing touch‑free.
 
-Features
-1)Type using eye movement
-2)Dwell-based key selection
-3)Simple and clean interface
-4)Compatible with major eye-tracking devices
+## What’s in the Project
 
-Requirements
-1)Python 3.7+
-2)OpenCV
-3)Dlib / Mediapipe (for gaze tracking)
+* `GazeKeyboard.py`: All the code is here. It:
 
-Installation
-git clone https://github.com/TarePradnyan/GazeKeyboard.git
-cd GazeKeyboard
+  * Opens your webcam
+  * Detects your eyes and face
+  * Draws a virtual keyboard
+  * Monitors where you look
+  * Selects keys after you look at them for a set time
 
-Usage
-python main.py
+* `requirements.txt`: Lists the Python libraries needed—like OpenCV and Dlib or MediaPipe.
+
+## Why This Design
+
+I kept everything in one file to make it easy to run and understand. As a first‑year student, I wanted to focus on learning how face and eye tracking works and how to build a keyboard overlay. I used dwell‑time selection because it’s simple—no need for extra gestures or buttons.
+
+## How to Run
+
+1. Install libraries:
+
+   ```bash
+   pip install -r requirements.txt
+   ```
+2. Plug in your webcam (or use the built‑in one), then run:
+
+   ```bash
+   python main.py
+   ```
+3. Look at keys—you’ll see a box fill up. Hold your gaze for about 2 seconds to type.
+
