@@ -32,5 +32,5 @@ I kept everything in one file to make it easy to run and understand. As a first�
    ```bash
    python main.py
    ```
-3. Look at keys—you’ll see a box fill up. Hold your gaze for about 2 seconds to type.
+3. Look at keys—you’ll see a box fill up. When fill up box is on the letter you want to type, blink your eyes for about 2 seconds.
 
