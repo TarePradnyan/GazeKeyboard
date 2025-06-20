@@ -14,7 +14,7 @@
   * Monitors where you look
   * Selects keys after you look at them for a set time
 
-* `requirements.txt`: Lists the Python libraries needed—like OpenCV and Dlib or MediaPipe.
+* `requirements.txt`: Lists the Python libraries needed—like OpenCV and Dlib or Numpy.
 
 ## Why This Design
 
